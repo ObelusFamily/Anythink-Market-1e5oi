@@ -56,6 +56,24 @@ body {
   -webkit-box-orient: vertical;
 }
 
+.search-box-container {
+  background-color: white;
+  border-radius: 0.3rem;
+  display: inline-block;
+  height: 32px;
+}
+.search-box-container > input {
+  border: none;
+  background-color: transparent;
+  height: 100%;
+  padding: 0.4rem;
+  outline: none;
+}
+.search-box-container > img {
+  height: 18px;
+  margin-right: 0.2rem;
+}
+
 .user-info {
   min-width: 800px;
 }
