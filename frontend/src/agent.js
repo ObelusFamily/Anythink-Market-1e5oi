@@ -54,6 +54,7 @@ const Items = {
   all: (page) => requests.get(`/items?${limit(1000, page)}`),
   bySeller: (seller, page) =>
     requests.get(`/items?seller=${encode(seller)}&${limit(500, page)}`),
+  byTitle: (title) => requests.get(`/items?title=${encode(title)}`),
   byTag: (tag, page) =>
     requests.get(`/items?tag=${encode(tag)}&${limit(1000, page)}`),
   del: (slug) => requests.del(`/items/${slug}`),
