@@ -70,6 +70,17 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 const MainView = (props) => {
+  if (props.term.length >= 3 && !props.items.length) {
+    return (
+      <div id="empty">
+        <img src="sad-tear-icon.svg" />
+        <div>
+          No items found for "<strong>{props.term}</strong>".
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div>
       <div className="feed-toggle">

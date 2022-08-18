@@ -74,6 +74,22 @@ body {
   margin-right: 0.2rem;
 }
 
+#empty {
+  background: rgba(255, 255, 255, 0.35);
+  width: 600px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0 auto;
+}
+
+#empty > img {
+  height: 77px;
+}
+
 .user-info {
   min-width: 800px;
 }
